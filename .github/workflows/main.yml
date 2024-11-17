@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: 🚀 Create update
-        run: eas build --non-interactive
+        run: eas build --non-interactive --platform android --profile preview
 
       # Crear un tag basado en la versión del package.json
       - name: Create a tag for the release
