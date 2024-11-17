@@ -1,4 +1,4 @@
-name: Publish App to Expo
+name: Publish to Expo
 
 on:
   push:
@@ -10,39 +10,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout del código del repositorio
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # Checkout del código del repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # Configuración de Node.js
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 22.11.0 # Cambiar según la versión requerida por tu proyecto
+      # Configuración de Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16" # Cambiar según la versión requerida por tu proyecto
 
-    # Instalación de dependencias
-    - name: Install dependencies
-      run: npm install
+      # Instalación de dependencias
+      - name: Install dependencies
+        run: npm install
 
-    # Autenticación con Expo
-    - name: Login to Expo
-      env:
-        EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }} # Asegúrate de agregar este secreto en la configuración del repositorio
-      run: npx expo login --non-interactive --token $EXPO_TOKEN
+      # Configuración de la variable CI para modo no interactivo
+      - name: Set CI environment variable
+        run: echo "CI=true" >> $GITHUB_ENV
 
-    # Publicar la app en Expo
-    - name: Publish to Expo
-      run: npx expo publish
+      # Autenticación con Expo
+      - name: Login to Expo
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }} # Asegúrate de agregar este secreto en la configuración del repositorio
+        run: echo $EXPO_TOKEN | npx expo login --username <EXPO_USERNAME> --password-stdin
 
-    # Crear un tag basado en la versión del package.json
-    - name: Create a tag for the release
-      id: create_tag
-      run: |
-        # Leer la versión del package.json
-        VERSION=$(node -p "require('./package.json').version")
-        echo "Version found: $VERSION"
-        # Crear un tag con el prefijo "v"
-        git tag "v$VERSION"
-        git push origin "v$VERSION"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token integrado para autenticación con GitHub
+      # Publicar la app en Expo
+      - name: Publish to Expo
+        run: npx expo publish
+
+      # Crear un tag basado en la versión del package.json
+      - name: Create a tag for the release
+        id: create_tag
+        run: |
+          # Leer la versión del package.json
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Version found: $VERSION"
+          # Crear un tag con el prefijo "v"
+          git tag "v$VERSION"
+          git push origin "v$VERSION"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token integrado para autenticación con GitHub
