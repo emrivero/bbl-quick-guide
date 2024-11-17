@@ -43,3 +43,11 @@ jobs:
           git push origin "v$VERSION"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token integrado para autenticación con GitHub
+      - name: Merge and push to develop
+        id: merge_and_push_to_develop
+        run: |
+          git checkout develop
+          git merge master
+          git push origin develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
