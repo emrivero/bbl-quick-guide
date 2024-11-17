@@ -32,7 +32,7 @@ jobs:
       - name: Login to Expo
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }} # Asegúrate de agregar este secreto en la configuración del repositorio
-        run: echo $EXPO_TOKEN | npx expo login --username <EXPO_USERNAME> --password-stdin
+        run: echo $EXPO_TOKEN | npx expo login --username ${{ secrets.EXPO_USERNAME }} --password-stdin
 
       # Publicar la app en Expo
       - name: Publish to Expo
