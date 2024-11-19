@@ -1,0 +1,680 @@
+[
+    {
+        "name": "Agallas",
+        "description": [
+            "Cuando el jugador realiza una acción de Placaje, incluido el Blitz, si el rival objetivo tiene más Fuerza que el jugador antes de aplicar modificadores por apoyos, tira 1d6 y añade la Fuerza del jugador, si el total es superior a la Fuerza del rival objetivo, el jugador aumenta su Fuerza hasta igualar la del rival durante este Placaje, después deben aplicarse los apoyos.",
+            "En caso de que el jugador tenga la habilidad como Furia, que le permite hacer dos Placajes, debe tirar Agallas por cada uno de ellos."
+        ]
+    },
+    {
+        "name": "Borracho",
+        "description": [
+            "Este jugador sufre una penalización de -1 a la tirada de dados cuando intenta precipitarse. (A Por Ellos)"
+        ]
+    },
+    {
+        "name": "Devolución del saque inicial",
+        "description": [
+            "Un jugador del equipo receptor que no esté en la Línea de Placajes iniciales o en una zona de placaje contraria puede usar esta habilidad cuando el balón ha sido pateado.",
+            "Permite al jugador moverse hasta 3 casillas después de que el balón haya sido dispersado pero antes de rodar en la tabla de Kick-Off. Sólo un jugador puede usar esta habilidad en cada saque. Esta habilidad no puede usarse para un saque de touchback y no permite al jugador cruzar a la mitad del campo contraria."
+        ]
+    },
+    {
+        "name": "Forcejeo",
+        "description": [
+            "Este jugador puede usar esta habilidad con el resultado de «Ambos Derribados», en lugar de aplicarlo normalmente, ambos jugadores se tumban en el suelo boca arriba, sin necesidad de tirar Armadura. No causa cambio de turno."
+        ]
+    },
+    {
+        "name": "Furia",
+        "description": [
+            "Cada vez que este jugador realice una acción de Placaje (sola o como parte de una acción Blitz), debe realizar un seguimiento si el objetivo es empujado hacia atrás y si puede hacerlo. Si el objetivo sigue en pie después de ser empujado hacia atrás, y si este jugador fue capaz de realizar el seguimiento, este jugador debe entonces realizar una segunda acción de Placaje contra el mismo objetivo, de nuevo ocupando a casilla del objetivo empujado hacia atrás. Si este jugador realiza una acción Blitz, realizar una segunda acción de Placaje también le costará uno de Movimiento. Si a este jugador no le queda Movimiento para realizar una segunda acción de Placaje, deberá Precipitarse para hacerlo. Si no puede correr, no puede realizar una segunda acción de Placaje. Ten en cuenta que si un jugador contrario en posesión del balón es empujado hacia tu Zona de Touch Down y sigue en pie, se marcará un touchdown, finalizando la entrada. En este caso, la segunda acción de Placaje no se realiza. Un jugador con esta habilidad no puede tener también la habilidad Apartar."
+        ]
+    },
+    {
+        "name": "Jugar Sucio",
+        "description": [
+            "Cuando este jugador comete una Falta, puede añadir (+X) a la tirada de Armadura o Heridas."
+        ]
+    },
+    {
+        "name": "Manos Seguras",
+        "description": [
+            "El jugador puede repetir una tirada fallida de AG al intentar recoger el balón del suelo. Además, el rival no puede usar Robar Balón."
+        ]
+    },
+    {
+        "name": "Patada",
+        "description": [
+            "Si este jugador es elegido como el jugador que da la Patada Inicial, puede elegir reducir a la mitad el número de casillas que se desvía el balón, redondeando hacia abajo."
+        ]
+    },
+    {
+        "name": "Perseguir",
+        "description": [
+            "Este jugador puede usar esta habilidad cuando un oponente abandona voluntariamente su zona de defensa. Tira 1d6 y suma el MO del jugador, restando el MO del rival, si la diferencia es 6+, el jugador puede ocupar inmediatamente la casilla abandonada por el rival, sin necesidad de hacer tirada de esquivar alguna.",
+            "El jugador puede usar esta habilidad múltiples veces por turno, pero sólo un jugador puede usarla si hay varios con posibilidad de hacerlo."
+        ]
+    },
+    {
+        "name": "Placaje Defensivo",
+        "description": [
+            "Cuando un jugador rival intenta esquivar desde la zona de defensa de este jugador, el rival no puede usar su habilidad Esquivar.",
+            "Además, cuando un rival es objetivo de un Placaje, o Blitz tampoco puede usarla."
+        ]
+    },
+    {
+        "name": "Placar",
+        "description": [
+            "Si durante un placaje se obtiene el resultado de Ambos Derribados, el jugador puede ignorar este resultado."
+        ]
+    },
+    {
+        "name": "Profesional",
+        "description": [
+            "Durante su activación este jugador puede intentar Repetir un único dado, incluso si forma parte de un grupo de dados, excepto tiradas de Armadura, Heridas o lesiones.",
+            "Tira un D6:",
+            "– 3+, el dado elegido puede ser repetido.",
+            "– 1-2, el dado no se puede repetir.",
+            "Una vez usada esta habilidad, ya no se puede usar Re-Roll para esta tirada."
+        ]
+    },
+    {
+        "name": "Robar Balón",
+        "description": [
+            "Cuando este jugador elige como objetivo a un rival en posesión del balón como acción de Placaje o Blitz, puede obligar a soltar el balón en caso de obtener un resultado de empujón. El balón rebotará desde la casilla en la que se empuja al rival como si fuese tumbado."
+        ]
+    },
+    {
+        "name": "Zafarse",
+        "description": [
+            "Si este jugador es empujado hacia atrás como consecuencia de cualquier resultado de dados de Placaje que se aplique contra él, puede elegir impedir que el jugador que le empujó hacia atrás le siga. Sin embargo, el jugador que le hizo retroceder puede continuar moviéndose como parte de una acción Blitz si le queda Movimiento. La habilidad no puede usarse cuando este jugador es empujado en cadena, contra un jugador con el rasgo de Bola y Cadena o contra un jugador con la habilidad Imparable que realizó la acción de Placaje como parte de un Blitz.",
+            ""
+        ]
+    },
+    {
+        "name": "Atrapar",
+        "description": [
+            "El jugador puede repetir una tirada fallida de AG al intentar atrapar un balón."
+        ]
+    },
+    {
+        "name": "Echarse a un Lado",
+        "description": [
+            "Si este jugador es empujado por cualquier razón, puede elegir a que casilla se moverá de todas las casillas vacías adyacentes a este jugador. Si no hay casillas vacías disponibles, no puede usar esta habilidad."
+        ]
+    },
+    {
+        "name": "En Pie de un Salto",
+        "description": [
+            "Si este jugador está en el suelo, puede levantarse sin gastar ningún punto de Movimiento, además puede intentar hacer acción de Placaje desde el suelo (Sin gastar la acción de Blitz), debe superar una tirada de Agilidad con +1, si tiene éxito, el jugador se levanta y hace el Placaje normalmente, si no se queda tumbado en el suelo y pierde su acción. Esta Habilidad puede seguir usándose si el jugador está Tumbado o ha perdido su Zona de defensa."
+        ]
+    },
+    {
+        "name": "Esprintar",
+        "description": [
+            "Cuando este jugador realiza cualquier acción que incluye moverse, puede intentar Forzar la marcha hasta tres veces, en lugar de las dos habituales."
+        ]
+    },
+    {
+        "name": "Esquivar",
+        "description": [
+            "Una vez por turno de equipo, durante su activación, este jugador puede repetir un chequeo de Agilidad fallido para intentar esquivar.",
+            "Además, este jugador puede usar su habilidad esquivar cuando sea blanco de una acción de Placaje (por sí solo o como parte de un Blitz ) y se obtenga un resultado de «Desequilibrio» contra él."
+        ]
+    },
+    {
+        "name": "Furtivo",
+        "description": [
+            "Cuando este jugador realiza una acción de falta, no es expulsado por sacar un doble natural en la tirada de armadura. Aún así, podrá ser expulsado si saca un doble natural en la tirada de heridas."
+        ]
+    },
+    {
+        "name": "Golpear y correr",
+        "description": [
+            "Después de que un jugador con este rasgo realice una acción de Placar, puede moverse inmediatamente en una casilla libre ignorando las zonas de placaje mientras siga en pie. Deben asegurarse de que, tras este movimiento libre, no son marcados por ningún jugador rival."
+        ]
+    },
+    {
+        "name": "Pies Firmes",
+        "description": [
+            "Una vez por turno de equipo, durante la activación de este jugador, este jugador puede repetir la tirada al intentar Forzar la marcha."
+        ]
+    },
+    {
+        "name": "Placaje Heroico",
+        "description": [
+            "Cuando un oponente obtiene un éxito en la tirada de Agilidad y abandona la zona de defensa del jugador al Esquivar, Saltar o Brincar, el jugador puede restar 2 a dicha tirada de Agilidad, este jugador se tumba en el suelo en la casilla abandonada, sin necesidad de tirada de Armadura. Sólo un jugador puede usar esta habilidad si hay varios con opción de hacerlo."
+        ]
+    },
+    {
+        "name": "Proteger el Cuero",
+        "description": [
+            "Si este jugador es derribado o colocado boca abajo (pero no si se cae) mientras está en posesión del balón, el balón no rebota. En su lugar, puedes colocar el balón en una casilla desocupada adyacente a la casilla donde este jugador es derribado o aturdido (colocado boca abajo)."
+        ]
+    },
+    {
+        "name": "Recepción Heroica",
+        "description": [
+            "El jugador puede intentar atrapar el balón si un pase, devolución del campo o patada inicial cae en la zona de defensa de este jugador, esta habilidad no funciona si el balón entra en la zona de defensa rebotando.",
+            "Además, tiene un +1 a la tirada de Agilidad para atrapar un pase preciso en la propia casilla del jugador."
+        ]
+    },
+    {
+        "name": "Rompe defensas",
+        "description": [
+            "Sólo durante el turno del oponente (No durante tu propio turno), cualquier jugador rival con la habilidad Defensa no puede usarla si esta en zona de defensa de este jugador."
+        ]
+    },
+    {
+        "name": "Saltar",
+        "description": [
+            "Un jugador con esta habilidad puede elegir saltar sobre cualquier casilla adyacente a una casilla libre u ocupada por un jugador en pie o tumbado, siguiendo las reglas de brincar. Reduce en 1 el modificador para Brincar o Saltar hasta un mínimo de -1. Un jugador con la Habilidad Pogo Saltarín no puede aprender Saltar."
+        ]
+    },
+    {
+        "name": "Atento al Balón",
+        "description": [
+            "Este jugador puede mover hasta 3 casillas cuando el oponente declara una Acción de Pase, este movimiento se efectúa después de declarar la casilla objetivo del pase, pero antes de hacer la tirada de Pase, también puede usar esta habilidad si el rival declara un Pase Precipitado, pero si este jugador se cae causará un cambio de turno.",
+            "Además, después del paso 2 (Colocar el Balón y Desviar) pero antes del paso 3 (Tirar la tabla de Patada Inicial), si este jugador está libre puede mover 3 casillas, no puede entrar en campo contrario ni puede usarla en caso de Recepción Libre."
+        ]
+    },
+    {
+        "name": "Cañonero",
+        "description": [
+            "Cuando este jugador realiza un Pase Largo o Bomba Larga puede añadir +1 a la tirada de Pase."
+        ]
+    },
+    {
+        "name": "Dar y seguir",
+        "description": [
+            "Si este jugador realiza una acción Pase en Mano, su activación no tiene por qué terminar una vez resuelta la acción. Si lo deseas, y si este jugador no ha usado todo su Movimiento, puede continuar moviéndose después de resolver el Pase."
+        ]
+    },
+    {
+        "name": "Dejada ",
+        "description": [
+            "Cuando este jugador realice una acción de Movimiento o Blitz estando en posesión del balón, puede elegir soltar el balón en cualquier casilla por la que haya pasado, no causa Cambio de Turno ni rebote de balón."
+        ]
+    },
+    {
+        "name": "Lanzamuros",
+        "description": [
+            "Cuando este jugador lanza el balón a la pared, puede aplicar un modificador adicional de +1 al comprobar la precisión del pase."
+        ]
+    },
+    {
+        "name": "Líder",
+        "description": [
+            "Un equipo con un jugador con esta habilidad gana un Re-Roll de Líder, sólo puede usarse si un jugador con esta habilidad está en el campo, si el jugador sale del campo antes de haber usado esta Re-Roll, se pierde. Este Re-Roll puede usarse en la Prórroga si no se ha gastado. Esta Re-Roll no puede perderse con el Chef Halfling."
+        ]
+    },
+    {
+        "name": "Nervios de Acero",
+        "description": [
+            "Este jugador puede ignorar los modificadores negativos por estar en zonas de defensa enemigas al Pasar, Atrapar o Interferir."
+        ]
+    },
+    {
+        "name": "Parte Nubes",
+        "description": [
+            "Cuando este jugador realiza un Pase Largo o Bomba Larga, puedes obligar a repetir la tirada de Interferir el pase del rival."
+        ]
+    },
+    {
+        "name": "Pasar",
+        "description": [
+            "Este jugador puede repetir una tirada fallida de Pase cuando hace una Acción de Pase."
+        ]
+    },
+    {
+        "name": "Pase en carrera",
+        "description": [
+            "Cuando este jugador realiza un Pase Rápido, puede continuar moviendo después de efectuar el Pase."
+        ]
+    },
+    {
+        "name": "Pase a lo Loco",
+        "description": [
+            "Cuando este jugador realice una acción de Pase (o Lanzar Bomba) puede elegir cualquier casilla del campo como objetivo. Independientemente del resultado de la tirada de PA, nunca será un Pase Preciso, pero es necesario hacer la tirada para determinar si el pase es Balón Perdido o Muy Impreciso. Un Pase a lo Loco no puede Interferirse ni ser usado con Ventisca."
+        ]
+    },
+    {
+        "name": "Pase Precipitado",
+        "description": [
+            "Cuando este jugador es elegido como objetivo de un Placaje, Blitz o acción especial (puñal, motosierra…) y está en posesión del balón, puede inmediatamente intentar una acción de Pase Rápido, esta NO causa Cambio de Turno, se aplican las reglas habituales de Pase. Una vez que el Pase haya sido resuelto, el rival puede continuar con su acción de Placaje."
+        ]
+    },
+    {
+        "name": "Pase Seguro",
+        "description": [
+            "Cuando este jugador obtiene un resultado de Balón Perdido en una acción de Pase, el balón no rebota y no causa cambio de turno, el balón se queda en posesión del Lanzador y acaba su acción inmediatamente."
+        ]
+    },
+    {
+        "name": "Precisión",
+        "description": [
+            "Cuando este jugador realiza un Pase Rápido o Pase Corto puede añadir +1 a la tirada de Pase.",
+            ""
+        ]
+    },
+    {
+        "name": "Abrirse Paso",
+        "description": [
+            "Una vez por activación, tras hacer un chequeo de agilidad para esquivar, este jugador modifica la tirada del dado en +1 si su atributo fuerza es de 4 o menos, o en +2 si su atributo fuerza es de 5 o más."
+        ]
+    },
+    {
+        "name": "Apartar",
+        "description": [
+            "Cuando este jugador realiza una acción de Placaje (en sí misma o como parte de una acción de penetración), puede utilizar la habilidad de Apartar para impedir que el blanco del placaje utilice a su vez la habilidad de Echarse a un lado.",
+            "Además, cuando este jugador realice una acción de placaje (que no sea parte de una acción de penetración), si el blanco resulta empujado puedes elegir cualquier casilla desocupada adyacente al blanco y empujarlo allí. Si no hay casillas desocupadas adyacentes al blanco, esta habilidad no puede utilizarse.",
+            "Un jugador con esta habilidad no puede tener la habilidad de furia."
+        ]
+    },
+    {
+        "name": "Brazo Fuerte",
+        "description": [
+            "Este jugador puede aplicar un modificador de +1 a cualquier chequeo de pase que efectúe al realizar una acción de Lanzar Compañero.",
+            "Un jugador que no tenga el rasgo lanzar compañero no puede tener esta habilidad."
+        ]
+    },
+    {
+        "name": "Cabeza Dura",
+        "description": [
+            "Cuando se haga una tirada de heridas contra este jugador ( incluso si esta tumbado boca arriba, aturdido o ha perdido su zona de defensa), solo quedará Inconsciente con un resultado de 9, y tratará el resultado de 8 como Aturdido.",
+            "En cambio, si este jugador tienes además el rasgo Escurridizo, solo quedará inconsciente con un resultado de 8, y tratará el resultado de 7 como aturdido.",
+            "Los demás resultados de la tabla de heridas no se ven afectados por la habilidad Cabeza Dura."
+        ]
+    },
+    {
+        "name": "Crujir",
+        "description": [
+            "Cuando un jugador rival sea Derribado por este jugador debido a una acción de Placaje (sea o no parte de una acción de penetración), este jugador puede cometer de inmediato una acción de falta gratuita contra el jugador al que acaba de derribar.",
+            "Para poder utilizar esta habilidad, este jugador debe estar en pie tras elegir y aplicar el resultado de los dados de placajes, y además debe ocupar una casilla adyacente al jugador rival derribado.",
+            "Tras utilizar esta habilidad, este jugador se coloca Tumbado boca arriba y su activación finaliza inmediatamente."
+        ]
+    },
+    {
+        "name": "Defensa",
+        "description": [
+            "Cuando un jugador realiza una Acción de Placaje (incluyendo como parte de una Acción de Blitz) este jugador puede ofrecer asistencias tanto ofensivas como defensivas independientemente de cuántos jugadores rivales los estén Marcando."
+        ]
+    },
+    {
+        "name": "Golpe Mortífero",
+        "description": [
+            "Cuando este jugador realiza una acción de Placaje (sea o no parte de una acción de penetración) que tiene como resultado que un jugador rival sea derribado, puedes modificar o bien la tirada de armadura o bien la tirada de heridas en una cantidad igual al número indicado entre paréntesis.",
+            "Esta habilidad no puede utilizarse en combinación con los rasgos apuñalar o motosierra."
+        ]
+    },
+    {
+        "name": "Imparable",
+        "description": [
+            "Cuando este jugador realiza un placaje como parte de una acción de penetración (pero no una acción de Placaje en sí misma), puedes elegir tratar un resultado de Ambos jugadores derribados como resultado de Empujón.",
+            "Además, cuando este jugador realiza una acción de placaje como parte de acción de penetración, el blanco de dicho placaje no puede usar habilidades de Forcejeo, Mantenerse firme ni Zafarse."
+        ]
+    },
+    {
+        "name": "Llave de Brazo",
+        "description": [
+            "Si un jugador rival cae por haber fallado su chequeo de agilidad al intentar Esquivar, Saltar o Brincar para salir de una casilla en la que esta siendo marcado por este jugador, puede aplicar un modificador de +1 o bien a la tirada de armadura o bien a la tirada de herida.",
+            "Este modificador puede aplicarse tras hacer la tirada en cuestión y puede aplicarse incluso si este jugador está ahora tumbado boca abajo.",
+            "Si el jugador rival esta siendo marcado a la vez por varios jugadores con esta habilidad, solo uno de ellos podrá utilizarla."
+        ]
+    },
+    {
+        "name": "Luchador",
+        "description": [
+            "Cuando este jugador realiza una acción de Placaje (que NO sea parte de un Blitz), puede repetir un único dado con resultado de ambos jugadores derribados."
+        ]
+    },
+    {
+        "name": "Mantenerse Firme",
+        "description": [
+            "Este jugador puede elegir no ser empujado, ya sea como resultado de una acción de placaje contra él o debido a un empujón en cadena.",
+            "El uso de  esta habilidad no impide a un jugador rival con la habilidad furia realizar una segunda acción de placaje contra este jugador, si este jugador sigue en pie tras el primer placaje."
+        ]
+    },
+    {
+        "name": "Placaje Múltiple",
+        "description": [
+            "Cuando este jugador realiza una acción de Placaje (que no sea parte de una acción de penetración), puede elegir efectuar dos acciones de Placaje, cada una de ellas tomando como blanco a un jugador rival distinto al que este marcando.",
+            "No obstante, al hacer esto el atributo fuerza de este jugador se reduce en 2 durante el resto de esa activación.",
+            "Ambas acciones de placaje se efectúan de manera simultánea, lo que quiere decir que se resuelve por completo incluso aunque una de ellas (o las dos) provoque un cambio de turno.",
+            "A fin de evitar confusiones, las tiradas para cada acción de Placaje deberían mantenerse separadas.",
+            "Este jugador no puede hacer movimientos de impulso al utilizar esta habilidad.",
+            "Ten en cuenta que elegir utilizar esta habilidad significa que este jugador no podrá utilizar la habilidad Furia durante la misma activación."
+        ]
+    },
+    {
+        "name": "Apariencia Asquerosa",
+        "description": [
+            "Cuando un jugador contrario declara una acción de Placaje dirigida a este jugador (por sí sola o como parte de una acción Blitz), o cualquier acción Especial dirigida a este jugador, su entrenador debe tirar primero un dado D6, incluso si este jugador ha perdido su Zona de Defensa. Con una tirada de 1, el jugador no puede realizar la acción declarada y la acción se desperdicia. Esta habilidad puede seguir usándose si el jugador está tumbado o ha perdido su Zona de Defensa."
+        ]
+    },
+    {
+        "name": "Boca Monstruosa",
+        "description": [
+            "El jugador puede repetir cualquier intento de Atrapar el balón, además no se puede usar Robar Balón contra este jugador."
+        ]
+    },
+    {
+        "name": "Brazos Adicionales",
+        "description": [
+            "Este jugador puede aplicar +1 cuando intenta coger el balón del suelo, Atrapar Balón o Interferir un pase."
+        ]
+    },
+    {
+        "name": "Cola Prensil",
+        "description": [
+            "Cuando un jugador rival intenta esquivar, saltar o brincar para abandonar una casilla en la que está siendo marcado por este jugador, se aplica un modificador adicional de -1 a la prueba de Agilidad del jugador activo.\\nSi el jugador contrario está siendo marcado por más de un jugador con esta Mutacion, sólo un jugador puede usarla."
+        ]
+    },
+    {
+        "name": "Cuernos",
+        "description": [
+            "Cuando el jugador realiza una acción de Placaje como parte de una acción Blitz (pero no por sí sola), puedes aplicar un modificador +1 a la característica de Fuerza de este jugador. Este modificador se aplica antes de contar las asistencias, antes de aplicar cualquier otro modificador de Fuerza y antes de usar cualquier otra Habilidad o Rasgo."
+        ]
+    },
+    {
+        "name": "Dos Cabezas",
+        "description": [
+            "Este jugador puede aplicar un +1 a la tirada de Agilidad cuando hace una Esquiva."
+        ]
+    },
+    {
+        "name": "Garras",
+        "description": [
+            "Cuando hagas una tirada de Armadura contra un rival que haya sido derribado como resultado de una acción de Placaje o Blitz hecha por este jugador, con 8+ antes de aplicar modificadores superará la tirada de Armadura."
+        ]
+    },
+    {
+        "name": "Mano Grande",
+        "description": [
+            "Este jugador puede ignorar los modificadores negativos por zonas de defensa o por las condiciones climáticas de lluvia torrencial al intentar coger el balón del suelo."
+        ]
+    },
+    {
+        "name": "Piel Férrea",
+        "description": [
+            "Los jugadores contrarios no pueden modificar ninguna tirada de armadura realizada contra este jugador. Además, la habilidad Garras no puede utilizarse al realizar una tirada de Armadura contra este jugador. Esta habilidad aún puede usarse si el jugador está Tumbado, Aturdido, o ha perdido su Zona de Defensa."
+        ]
+    },
+    {
+        "name": "Piernas Muy Largas",
+        "description": [
+            "Este jugador puede reducir en 1 cualquier modificador negativo aplicado a la prueba de Agilidad cuando intente saltar sobre un jugador Tumbado boca arriba o Aturdido (o saltar sobre una casilla vacía o una casilla ocupada por un jugador de pie, si este jugador tiene la habilidad Saltar), hasta un mínimo de -1. Además, este jugador puede aplicar un modificador de +2 a cualquier intento de interferir en un pase que realice. Por último, este jugador ignora la habilidad Parte Nubes."
+        ]
+    },
+    {
+        "name": "Presencia Perturbadora",
+        "description": [
+            "Cuando un oponente intente hacer una acción de Pase, Lanzar Compañero, Lanzar Bomba, Interferir Pase o Atrapar balón debe aplicar un -1 por cada jugador con esta habilidad que se encuentra a 3 casillas o menos. Incluso si está Tumbado en el suelo o ha perdido su Zona de Defensa."
+        ]
+    },
+    {
+        "name": "Tentáculos",
+        "description": [
+            "Este jugador puede usar esta habilidad cuando un jugador contrario al que está marcando se desplaza voluntariamente fuera de una casilla dentro de su zona de placaje. Tira un D6, sumando la Fuerza de este jugador a la tirada y restando la Fuerza del jugador contrario. Si el resultado es 6 o más, o si la tirada es un 6 natural, el jugador adversario es retenido firmemente en su sitio y su movimiento finaliza. Sin embargo, si el resultado es 5 o inferior, o si la tirada es un 1 natural, esta Habilidad no tiene ningún efecto. Un jugador puede usar esta Habilidad cualquier número de veces por turno, durante el turno de cualquiera de los dos equipos. Si un jugador contrario está siendo marcado por más de un jugador con esta habilidad, sólo un jugador puede usarla.",
+            ""
+        ]
+    },
+    {
+        "name": "Aliento de Fuego",
+        "description": [
+            "Una vez por activación, en lugar de realizar una acción de Bloqueo (ya sea por sí sola o como parte de una acción Blitz), este jugador puede realizar una acción Especial de Respirar Fuego. Cuando un jugador realiza una acción especial de Respirar Fuego, puede elegir al jugador contrario que está marcando y lanzar un D6, aplicando un modificador -1 si el objetivo tiene una Fuerza de 5 o superior:",
+            "Una vez resuelta la acción especial Respirar Fuego, la activación de este jugador finaliza inmediatamente."
+        ]
+    },
+    {
+        "name": "Animal Feroz",
+        "description": [
+            "Cuando se activa a este jugador y se declara una acción, incluso si está tumbado o sin zona de defensa, debe tirar 1d6, sumando +2 si la acción declarada es Placaje, Blitz o Habilidad Especial que sustituya al Placaje.",
+            "Si declaraste que este jugador realizaría una acción que sólo puede realizarse una vez por turno de equipo y la activación de este jugador terminó antes de que la acción pudiera completarse, la acción se considera realizada y ningún otro jugador de tu equipo puede realizar la misma acción este turno de equipo."
+        ]
+    },
+    {
+        "name": "Animosidad",
+        "description": [
+            "Cuando este jugador desea hacer una Entrega en Mano o un Pase a un jugador listado en (x), debe tirar 1D6, con un resultado de 1 el jugador se queda con el balón y termina su activación. No se aplica a Mercenarios ni a Jugadores Estrella."
+        ]
+    },
+    {
+        "name": "Apuñalar",
+        "description": [
+            "En lugar de realizar una acción de Placaje o Blitz, puede elegir un oponente y hacer esta acción especial, debe tirar por Armadura y Heridas normalmente, ninguna de estas tiradas puede ser modificada de ninguna manera, si no supera la tirada de Armadura, no tiene efecto. Si forma parte de un Blitz no puede seguir moviendo."
+        ]
+    },
+    {
+        "name": "Arma Secreta",
+        "description": [
+            "Cuando termine la entrada en la que este jugador haya participado, incluso si ya no se encuentra en el campo al finalizar dicha entrada, este jugador será expulsado por el árbitro como si hubiera cometido una Falta."
+        ]
+    },
+    {
+        "name": "Bola y Cadena",
+        "description": [
+            "Cuando este jugador es activado, solo puede realizar la acción especial de Bola y Cadena.",
+            "Cuando este jugador mueve a una casilla ocupada por otro jugador en pie (amigo o enemigo) debe realizar un Placaje",
+            "Si este jugador mueve a una casilla ocupada por un jugador tumbado en el suelo, se empuja y se tira contra su Armadura.",
+            "Si el jugador desea «Forzar la Marcha», debe colocar la plantilla, tirar 1d6 y moverse:",
+            "Si el jugador se cae o es Tumbado, inmediatamente haz una tirada Heridas contra el, considerando «Inconsciente» como resultado mínimo.",
+            "Un jugador con esta habilidad no puede tener Placaje Heroico, Furia, Apartar, Saltar, Placaje Múltiple, Atento al Balón o Perseguir."
+        ]
+    },
+    {
+        "name": "Bombardero",
+        "description": [
+            "Cuando se activa este jugador y está en pie, puede efectuar una acción especial de Lanzamiento de Bomba, esta acción No se considera ni Pase ni Lanzamiento de Compañero, pero sólo se puede ejecutar un Lanzamiento de Bomba por turno.",
+            "Una Bomba puede ser Lanzada, Atrapada e Interferida igual que un balón, usando las reglas habituales de Pase con las siguientes excepciones:",
+            "Si la Bomba es atrapada por algún jugador tira 1d6:",
+            "Si la Bomba abandona el campo, explota en el público y se pierde.",
+            "Cuando la Bomba cae en el suelo, sobre un jugador tumbado o en casilla ocupada por jugador y falla al atrapar, explota.",
+            "– Si la Bomba explota en una casilla ocupada, el jugador es inmediatamente impactado.",
+            "– Tira 1d6 por cada jugador adyacente a la casilla donde explota la Bomba.",
+            "4+, el jugador es impactado.",
+            "1-3, el jugador evita la explosión.",
+            "Cualquier jugador en pie impactado por la Bomba, se tumba en el suelo. Se debe tirar por Armadura y Heridas si corresponde con un modificador de +1 a la Armadura o Heridas. Igualmente, para los jugadores tumbados impactados."
+        ]
+    },
+    {
+        "name": "Canijo",
+        "description": [
+            "Este jugador puede aplicar un +1 a la tirada de AG al Esquivar, además cuando un oponente intenta Esquivar a una zona de defensa de un jugador con esta habilidad no aplica modificadores negativos de AG al esquivarle."
+        ]
+    },
+    {
+        "name": "Colarse",
+        "description": [
+            "Durante el inicio de cada entrada, después del paso 2 (Colocar el Balón y Desviar) pero antes del paso 3 (Tirar la tabla de Patada Inicial), puedes retirar 1d3 jugadores con esta regla del banquillo de reservas y colocarlos en el campo, superando el límite de 11 jugadores en el campo, no pueden estar en las bandas ni en la línea frontal central."
+        ]
+    },
+    {
+        "name": "Chutar Compañero",
+        "description": [
+            "Una vez por turno, además de que otro jugador realice una acción de Pase o Lanzar Compañero, este jugador puede efectuar un Chutar Compañero. Para efectuarlo debes seguir las mismas reglas que con el Lanzar Compañero, pero si el resultado del Lanzamiento es un fumble, el jugador Pateado realiza tirada de Heridas, considerando el KO como resultado mínimo, además el entrenador rival puede hacer uso del Golpe Mortífero del Pateador si lo tuviera."
+        ]
+    },
+    {
+        "name": "Descomposición",
+        "description": [
+            "Cuando este jugador tira en la tabla de Lesiones debe sumar +1 a dicha tirada."
+        ]
+    },
+    {
+        "name": "Echar Raíces",
+        "description": [
+            "Cuando se activa a este jugador y se declara una acción, incluso si está tumbado o sin zona de defensa, debe tirar 1D6:"
+        ]
+    },
+    {
+        "name": "Embaucador",
+        "description": [
+            "Cuando un jugador está a punto de ser golpeado por una acción de Placaje o una acción que sustituye a una acción de Placaje (con la excepción de una acción de Placaje causada por la acción Especial de Movimiento de Bola con Cadena), antes de determinar cuántos dados se tiran, puede ser retirado del terreno de juego y colocado en cualquier otra casilla desocupada adyacente al jugador que realiza la acción de Placaje. Despues la acción de Placaje se realiza de forma normal. Si el jugador que utiliza este Rasgo tiene el balón en su poder y se coloca en la zona de TouchDown contraria, la acción de Bloqueo se resolverá por completo antes de que se resuelva cualquier TouchDown."
+        ]
+    },
+    {
+        "name": "Escurridizo",
+        "description": [
+            "Cuando este jugador hace una tirada de AG para Esquivar, puede ignorar todos los modificadores negativos por zonas de defensa enemigas, a menos que tenga la habilidad Bombardero, Motosierra o Planear.",
+            "Además, cuando un rival intenta interferir un Pase hecho por este jugador, puede aplicar un +1 a la tirada de AG.",
+            "También deben usar la Tabla de Heridas para Escurridizos."
+        ]
+    },
+    {
+        "name": "Estacas",
+        "description": [
+            "El jugador está armado con unas estacas especiales que están bendecidas para causar un daño adicional a los No Muertos y a aquéllos que trabajan para ellos. El jugador puede añadir 1 a la tirada de Armadura cuando realice un ataque con Puñal contra cualquier jugador que juegue para un equipo Khemri, Nigromantes, No Muertos o Vampiros."
+        ]
+    },
+    {
+        "name": "Estúpido",
+        "description": [
+            "Cuando se activa a este jugador y se declara una acción, incluso si está tumbado o sin zona de defensa, debe tirar 1d6:",
+            "– 1, el jugador perderá su acción declarada y perderá su zona de defensa.",
+            "– 2+, el jugador continúa su acción normalmente."
+        ]
+    },
+    {
+        "name": "Favorito del Público",
+        "description": [
+            "Los hinchas adoran tanto ver a este jugador sobre el terreno de juego que incluso los hinchas contrarios animan a tu equipo. Por cada jugador Favorito del Público de tu equipo que se encuentra en el campo, tu equipo recibe un +1 adicional al modificador de FAMA para cualquier resultado de la Tabla de Patada Inicial, pero no para la tirada de Recaudación."
+        ]
+    },
+    {
+        "name": "Humanoide Bala",
+        "description": [
+            "Si este jugador tiene FU 3 o inferior puede ser Lanzado por un Compañero de Equipo."
+        ]
+    },
+    {
+        "name": "Ira Descontrolada",
+        "description": [
+            "Cuando se activa a este jugador y se declara una acción, incluso si está tumbado o sin zona de defensa, debe tirar 1d6, sumando +2 si la acción declarada es Placaje, Blitz o Habilidad Especial."
+        ]
+    },
+    {
+        "name": "Lanzar Compañero de Equipo",
+        "description": [
+            "Una vez por turno de equipo, en lugar de realizar una acción de Pase, un jugador de Fuerza 5 o más del equipo activo con el rasgo de Lanzar Compañero puede intentar lanzar a un compañero con el rasgo de Humanoide bala como si del balón se tratase. La casilla objetivo de una acción de Lanzar compañero puede estar ocupada o desocupada, y la acción se puede clasificar como “Lanzamiento rápido” o “Lanzamiento corto” según la distancia. A diferencia de una acción de Pase, una acción de Lanzar compañero que no resulte en balón perdido siempre se escorará antes de aterrizar.",
+            "Si el jugador que va a ser lanzado está En pie, puede intentar aterrizar adecuadamente tras ser lanzado. Si está Tumbado boca arriba o Aturdido, puede ser lanzado pero no puede aterrizar adecuadamente.",
+            "El jugador que realiza la acción puede moverse antes del lanzamiento, siguiendo todas las reglas normales de movimiento, pero debe estar en una casilla adyacente al jugador que quiere lanzar en el momento de realizar el lanzamiento; no puede agarrarlo y llevarlo consigo al moverse. En cuanto realiza el movimiento, no puede moverse más y su activación termina.",
+            "Se utiliza la regla de distancias para medir la distancia entre el lanzador y cualquier posible objetivo, antes de elegir y declarar una.",
+            "El entrenador del jugador que realiza la acción tira 1D6 para determinar la calidad del lanzamiento.\\n\\nEl jugador que realiza el lanzamiento realiza un chequeo de Pase aplicando los siguientes modificadores según la distancia:",
+            "El lugar donde acabe aterrizando el jugador lanzado, así como lo bien o mal que aterrice, dependerá de la calidad del lanzamiento. Si sale una pifia, significa que el lanzador ha soltado antes de tiempo al jugador que iba a lanzar, y éste rebota desde la casilla que ocupa el jugador que iba a lanzar.",
+            "Si el resultado es una pifia, fracasa y la activación del jugador que la realizaba termina de inmediato. El jugador que iba a ser lanzado es soltado y rebota desde la casilla que ocupa el jugador que realizaba la acción, tras lo cual debe intentar aterrizar."
+        ]
+    },
+    {
+        "name": "Mi Balón",
+        "description": [
+            "Un jugador con este Rasgo no puede ceder voluntariamente el balón cuando está en posesión del mismo, por lo que no puede realizar acciones de Pase, Acciones de Entrega, ni utilizar ninguna otra Habilidad o Rasgo que le permita renunciar a la posesión del balón. La única forma de perder la posesión del balón es ser Derribado, Aturdido, Caerse o por el efecto de una Habilidad, Rasgo o regla especial de un jugador contrario."
+        ]
+    },
+    {
+        "name": "Mirada hipnótica",
+        "description": [
+            "Durante su activación puede hacer una acción especial de Mirada Hipnótica, declara el jugador en pie objetivo y en su zona de defensa, realiza una tirada de AG aplicando un -1 por cada zona de defensa enemiga. Si se supera la tirada el jugador pierde su zona de defensa hasta su siguiente activación. Una vez usada esta habilidad finaliza la activación del jugador.",
+            "El jugador puede utilizar la Mirada Hipnótica al final de su Acción de Movimiento."
+        ]
+    },
+    {
+        "name": "Motosierra",
+        "description": [
+            "En lugar de efectuar una acción de Placaje o Blitz, este jugador puede hacer una acción especial de Motosierra, declara el objetivo del ataque y tira 1d6:",
+            "El jugador impactado por la Motosierra debe hacer una tirada de Armadura aplicando un +3 a la tirada.",
+            "Si se supera la tirada de Armadura, se hace la tirada de Heridas, que no puede ser modificada de ninguna manera.",
+            "Si no se supera la tirada de Armadura, el ataque no tiene efecto.",
+            "El jugador sólo puede usar la Motosierra una vez por turno (no puede combinarse con Placaje Múltiple o Furia)",
+            "Si el ataque forma parte de un Blitz no podrá continuar moviendo.",
+            "Si un oponente realiza un placaje contra un jugador con Motosierra y resulta «Atacante Derribado» puede sumar +3 a la tirada de Armadura, así como si el resultado es «Ambos Derribados» ambos aplican +3 a la tirada de Armadura.",
+            "Si el jugador comete Falta sobre un oponente tira 1d6 para ver si se impacta a sí mismo, si no aplica el +3 a la tirada de Armadura."
+        ]
+    },
+    {
+        "name": "Planear",
+        "description": [
+            "Cuando este jugador es Lanzado por un Compañero no se dispersa normalmente antes de aterrizar, en cambio debes colocar la plantilla de Devolución de balón en dirección a la línea de Touchdown o una de las Bandas y avanzar 1d3 casillas en la dirección aleatoria marcada por la plantilla."
+        ]
+    },
+    {
+        "name": "Pogo Saltarín",
+        "description": [
+            "En lugar de intentar brincar a través de jugadores tumbados, además puede saltar a través jugadores en pie, se realiza de igual forma, pero ignorando todos los penalizadores. Un jugador con esta habilidad no puede tener Saltar."
+        ]
+    },
+    {
+        "name": "Proyectil Vómito",
+        "description": [
+            "En lugar de realizar una acción de Placaje o Blitz, puede elegir un oponente y hacer esta acción especial. Tira 1d6:",
+            "En cualquier caso, el jugador impactado debe tirar por Armadura normalmente.",
+            "Si se supera la tirada de Armadura el jugador es tumbado boca arriba y se debe tirar por Heridas.",
+            "Ninguna de estas tiradas puede ser modificada de ninguna manera, si no supera la tirada de Armadura, no tiene efecto."
+        ]
+    },
+    {
+        "name": "Putrefacción de Nurgle",
+        "description": [
+            "Una vez por partido, cuando un oponente con FU 4 o menos que no tenga la habilidad Degenerar, Regeneración o Escurridizo sufre un resultado de 15-16 Muerto como resultado de una acción de Placaje, Blitz o Falta cometida por un jugador con esta habilidad.",
+            "Si tu equipo tiene la regla especial Favoured of Nurgle, puedes añadir a tu Roster un Línea Putrefacto al banquillo en reservas, puedes sobrepasar el límite de 16 jugadores durante este partido. Durante el post partido puedes contratarlo como si fuera un Línea Solitario de la forma habitual."
+        ]
+    },
+    {
+        "name": "Realmente Estúpido",
+        "description": [
+            "Cuando se activa a este jugador y se declara una acción, incluso si está tumbado o sin zona de defensa, debe tirar 1d6, sumando +2 si está adyacente a un Compañero en pie que no sea Realmente Estúpido también:",
+            "– 1-3, el jugador perderá su acción declarada y perderá su zona de defensa.",
+            "– 4+, el jugador continúa su acción normalmente."
+        ]
+    },
+    {
+        "name": "Bebida Reconstituyente",
+        "description": [
+            "Al final del turno del equipo contrario, tira un D6 por cada compañero de equipo Tumbado, no aturdido, que esté a tres casillas de un jugador de pie con este Rasgo. Con un 5+, el jugador Tumbado puede levantarse inmediatamente."
+        ]
+    },
+    {
+        "name": "Regeneración",
+        "description": [
+            "Si este jugador sufre una herida en la tabla de Lesiones, puedes ignorar el resultado con una tirada de 4+ exitosa. Si tiene éxito puedes poner al jugador en el banquillo en reservas."
+        ]
+    },
+    {
+        "name": "Sed de Sangre",
+        "description": [
+            "Para mantener el control de su cordura, los Vampiros necesitan un suministro de sangre fresca. Siempre que un jugador con este Rasgo se active, después de después de declarar su acción, debe tirar un D6, sumando 1 a la tirada si declaró una acción de Placaje o una acción Blitz.",
+            "Si obtiene igual o superior al número indicado entre paréntesis, puede pueden activarse normalmente.",
+            "Si el jugador obtiene un resultado inferior al indicado entre paréntesis, o saca un 1 natural, puede continuar con su activación normalmente. Aunque puede cambiar su acción declarada a una acción de Movimiento si lo desea. Si el jugador declara una acción que sólo puede ser una vez por turno de equipo (como una acción Blitz), seguirá contando como una de esas acciones para el turno de equipo.\\nAl final de su activación pueden morder a un compañero de equipo Thrall Lineman adyacente(de pie, tumbado boca arriba o aturdido).",
+            "Si muerden a un Thrall, efectúa inmediatamente una tirada de Herida por el Thrall.\\nResultado de Baja como Malherido; esto no causará un cambio de turno a menos que el Thrall estuviera sujetando el balón.",
+            "Si no muerden a un Thrall por cualquier motivo, entonces se produce un Cambio de Turno , el jugador perderá su zona de placaje hasta su siguiente activación, y soltará inmediatamente el balón si lo tenía en su poder. Si estaba en la zona de anotación contraria, no se anota ningún touchdown.",
+            "Si un jugador jugador que falló esta tirada quiere hacer una acción de Pase, Pase en Mano, o anotar, debe morder a un Thrall antes de realizar la acción o anotar."
+        ]
+    },
+    {
+        "name": "Siempre Hambriento",
+        "description": [
+            "Si este jugador desea Lanzar Compañero, tira 1d6 después de que haya movido. Con 2+ continúa la acción normalmente, con un resultado de 1, tira otro d6:",
+            "– 1, se come al Compañero, no se puede usar Médico ni regeneración. Borra al jugador del Roster.",
+            "– 2+, el Compañero se escapa y el resultado del Lanzamiento es automáticamente un fumble."
+        ]
+    },
+    {
+        "name": "Sin Manos",
+        "description": [
+            "Este jugador no puede intentar coger el balón del suelo, atrapar o interferir un pase. Si lo hace falla automáticamente y rebotará, además causará pérdida de turno si voluntariamente intenta cogerlo del suelo al entrar en la casilla del balón."
+        ]
+    },
+    {
+        "name": "Solitario",
+        "description": [
+            "Si este jugador desea hacer uso de una Re-Roll de equipo debe primero superar una tirada de Solitario (x+), de lo contrario no podrá repetir la tirada y perderá esa Re-Roll que deseaba usar."
+        ]
+    },
+    {
+        "name": "¡Tronco Va!",
+        "description": [
+            "Si este jugador tiene MO 2 o inferior, puede aplicar +1 a la tirada de levantarse por cada jugador en pie adyacente, un resultado de 1 siempre se considera fallo."
+        ]
+    }
+]

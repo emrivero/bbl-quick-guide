@@ -1,0 +1,83 @@
+[
+  {
+    name: "Old World Alliance",
+    image: require("../../assets/images/teams/OldWorld-Alliance.webp"),
+  },
+  {
+    name: "High Elf",
+    image: require("../../assets/images/teams/High-Elf.webp"),
+  },
+  { name: "Amazons", image: require("../../assets/images/teams/Amazons.webp") },
+  {
+    name: "Bretonnie",
+    image: require("../../assets/images/teams/Bretonnie_Logo.webp"),
+  },
+  {
+    name: "Daemons of Khorne",
+    image: require("../../assets/images/teams/daemons-of-khorne.webp"),
+  },
+  { name: "Chaos", image: require("../../assets/images/teams/Chaos.webp") },
+  {
+    name: "Dark Elf",
+    image: require("../../assets/images/teams/Dark-Elf.webp"),
+  },
+  {
+    name: "Wood Elf",
+    image: require("../../assets/images/teams/Wood-Elf.webp"),
+  },
+  { name: "Dwarf", image: require("../../assets/images/teams/Dwarf.webp") },
+  {
+    name: "Chaos Dwarf",
+    image: require("../../assets/images/teams/Chaos-Dwarf.webp"),
+  },
+  {
+    name: "Gnome",
+    image: require("../../assets/images/teams/Logo_Gnome.webp"),
+  },
+  { name: "Goblin", image: require("../../assets/images/teams/Goblin.webp") },
+  {
+    name: "Underworld",
+    image: require("../../assets/images/teams/Underworld.webp"),
+  },
+  {
+    name: "Halflings",
+    image: require("../../assets/images/teams/Halflings.webp"),
+  },
+  {
+    name: "Lizardmen",
+    image: require("../../assets/images/teams/Lizardmen.webp"),
+  },
+  { name: "Human", image: require("../../assets/images/teams/Human.webp") },
+  { name: "Khemri", image: require("../../assets/images/teams/Khemri.webp") },
+  {
+    name: "Khorne",
+    image: require("../../assets/images/teams/Khorne_banner.png.webp"),
+  },
+  {
+    name: "Necromantic",
+    image: require("../../assets/images/teams/Necromantic.webp"),
+  },
+  {
+    name: "Old World Aliance",
+    image: require("../../assets/images/teams/Old-World-Aliance.webp"),
+  },
+  { name: "Undead", image: require("../../assets/images/teams/Undead.webp") },
+  { name: "Norse", image: require("../../assets/images/teams/Norse.webp") },
+  { name: "Nurgle", image: require("../../assets/images/teams/Nurgle.webp") },
+  { name: "Ogre", image: require("../../assets/images/teams/Ogre.webp") },
+  { name: "Orc", image: require("../../assets/images/teams/Orc.webp") },
+  {
+    name: "Black Orc",
+    image: require("../../assets/images/teams/Black-Orc.webp"),
+  },
+  {
+    name: "Chaos Chosen",
+    image: require("../../assets/images/teams/Chaos-Chosen.webp"),
+  },
+  { name: "Skaven", image: require("../../assets/images/teams/Skaven.webp") },
+  {
+    name: "Slaanesh",
+    image: require("../../assets/images/teams/slaanesh.webp"),
+  },
+  { name: "Slann", image: require("../../assets/images/teams/Slann.webp") },
+];
