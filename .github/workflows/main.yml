@@ -47,8 +47,8 @@ jobs:
         run: |
           android_link=https://expo.dev/artifacts/eas/2c9FBwZTCf7YCY57P5NaWy.apk
           curl -L -o app.apk "$android_link"
-          curl -X POST
-          -F "chat_id=${TELEGRAM_CHAT_ID}"
+          curl -X POST \
+          -F "chat_id=${TELEGRAM_CHAT_ID}" \
           -F "document=@app.apk"
           "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument"
 
