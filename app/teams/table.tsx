@@ -3,11 +3,6 @@ import React, { FC } from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { Card, Divider, useTheme } from "react-native-paper";
 
-interface TeamData {
-  header: string;
-  values: string[];
-}
-
 const TableToCards: FC<{ data: any }> = ({ data }) => {
   const theme = useTheme() as CustomTheme;
   const headers = data.map((item) => item.header);

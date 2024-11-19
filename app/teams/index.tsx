@@ -20,18 +20,20 @@ const Teams = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.gallery}>
-      {teams.map((team) => (
-        <TouchableOpacity
-          key={team.name}
-          style={styles.card}
-          onPress={() => handlePress(team)}
-        >
-          <Image source={team.image} style={styles.image} />
-          <Text style={[styles.text, { color: theme.colors.textMenu }]}>
-            {team.name}
-          </Text>
-        </TouchableOpacity>
-      ))}
+      {teams
+        .filter((team) => !team.hidden)
+        .map((team) => (
+          <TouchableOpacity
+            key={team.name}
+            style={styles.card}
+            onPress={() => handlePress(team)}
+          >
+            <Image source={team.image} style={styles.image} />
+            <Text style={[styles.text, { color: theme.colors.textMenu }]}>
+              {team.name}
+            </Text>
+          </TouchableOpacity>
+        ))}
     </ScrollView>
   );
 };
