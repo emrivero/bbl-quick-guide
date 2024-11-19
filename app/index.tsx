@@ -13,12 +13,6 @@ import {
 
 const logo = require("../assets/images/logo.webp");
 
-const links = [
-  { href: "/actions", text: "Acciones" },
-  { href: "/skills", text: "Habilidades" },
-  { href: "/teams", text: "Equipos" },
-];
-
 export default function Index() {
   const theme = useTheme() as CustomTheme;
   const color = Appearance.getColorScheme();
@@ -39,13 +33,13 @@ export default function Index() {
         Blood Bowl!
       </Text>
       <Text style={styles.header2}>Referencia Rápida</Text>
-      <Image source={logo} style={styles.logo} />
-      <View style={styles.menu}>
-        {links.map(({ href, text }) => (
-          <MenuLink key={href} href={href}>
-            {text}
-          </MenuLink>
-        ))}
+      <View style={styles.logoContainer}>
+        <Image source={logo} style={styles.logo} />
+        <Link href={"/pages"}>
+          <Text style={[{ fontSize: 40, color: theme.colors.textMenu }]}>
+            Entrar
+          </Text>
+        </Link>
       </View>
       <View style={styles.footer}>
         <TouchableOpacity onPress={toggleColorTheme} style={styles.iconButton}>
@@ -106,5 +100,11 @@ const styles = StyleSheet.create({
   logo: {
     width: 200,
     height: 200,
+  },
+  logoContainer: {
+    height: "60%",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 20,
   },
 });
