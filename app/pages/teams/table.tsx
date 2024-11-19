@@ -17,7 +17,7 @@ const TableToCards: FC<{ data: any }> = ({ data }) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {positions.map((position, index) => (
-        <Card key={position.POS} style={styles.card}>
+        <Card key={index} style={styles.card}>
           <View style={{ alignContent: "center" }}>
             <Card.Title
               titleStyle={{
@@ -38,7 +38,7 @@ const TableToCards: FC<{ data: any }> = ({ data }) => {
                           {key}
                         </Text>
                       </View>
-                      <View style={{ width: "70%" }}>
+                      <View key={idx} style={{ width: "70%" }}>
                         {position[key]?.split(",").map((line, idx) => (
                           <Text key={idx} style={[styles.value]}>
                             {line}

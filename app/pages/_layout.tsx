@@ -1,7 +1,6 @@
 import { IconSymbol } from "@/components/ui/IconSymbol";
-import BlurTabBarBackground from "@/components/ui/TabBarBackground.ios";
+import { FontAwesome5, FontAwesome6, Octicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import { Platform } from "react-native";
 import { HapticTab } from "../../components/HapticTab";
 
 export default function PagesLayout() {
@@ -11,26 +10,45 @@ export default function PagesLayout() {
         // tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerShown: false,
         tabBarButton: HapticTab,
-        tabBarBackground: BlurTabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: "absolute",
-          },
-          default: {
-            backgroundColor: "red",
-            opacity: 1,
-            backgroundOpacity: 1,
-          },
-        }),
+        tabBarStyle: {
+          backgroundColor: "white",
+          borderColor: "transparent",
+        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Inicio",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="house.fill" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="teams"
+        options={{
+          title: "Equipos",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 name="football-ball" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="skills"
+        options={{
+          title: "Habilidades",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome6 name="hand-back-fist" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="actions"
+        options={{
+          title: "Acciones",
+          tabBarIcon: ({ color }) => (
+            <Octicons name="workflow" size={24} color={color} />
           ),
         }}
       />
