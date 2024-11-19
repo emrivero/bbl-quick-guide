@@ -18,6 +18,15 @@ jobs:
         with:
           node-version: 22.11.0
           cache: npm
+      - name: Notify new build
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -X POST \
+          -F "chat_id=${TELEGRAM_CHAT_ID}" \
+          -F "text=¡Nueva build cocinándose! Os la enviaré cuando esté lista." \
+          "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage"
 
       - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
@@ -29,7 +38,22 @@ jobs:
         run: npm install
 
       - name: 🚀 Create update
-        run: eas build --non-interactive --platform android --profile preview
+        run: |
+          build_json=$(eas build --profile preview --platform android --non-interactive --json)
+          android_link=$(echo $build_json | jq -r '.[] | select(.platform=="ANDROID") | .artifacts.applicationArchiveUrl') \
+          echo "ANDROID_LINK=$android_link" >> $GITHUB_ENV
+
+      - name: Upload APK to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANDROID_LINK: ${{ env.ANDROID_LINK }}
+        run: |
+          curl -L -o app.apk "$ANDROID_LINK"
+          curl -X POST \
+          -F "chat_id=${TELEGRAM_CHAT_ID}" \
+          -F "document=@app.apk" \
+          "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument"
 
       # Crear un tag basado en la versión del package.json
       - name: Create a tag for the release
