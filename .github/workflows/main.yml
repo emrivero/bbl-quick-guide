@@ -24,9 +24,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          VERSION=$(jq -r '.version' package.json)
           curl -X POST \
           -F "chat_id=${TELEGRAM_CHAT_ID}" \
-          -F "text=¡Nueva build cocinándose! Os la enviaré cuando esté lista." \
+          -F "text=¡Nueva build cocinándose! Os la enviaré cuando esté lista. Versión: ${VERSION}" \
           "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage"
 
       - name: 🏗 Setup EAS
@@ -43,14 +44,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-          # build_json=$(eas build --profile preview --platform android --non-interactive --json)
         run: |
-          android_link=https://expo.dev/artifacts/eas/2c9FBwZTCf7YCY57P5NaWy.apk
-          curl -L -o app.apk "$android_link"
+          VERSION=$(jq -r '.version' package.json)
+          build_json=$(eas build --profile preview --platform android --non-interactive --json --message="Build $VERSION")
+          android_link=$(echo $build_json | jq -r '.[] | select(.platform=="ANDROID") | .artifacts.applicationArchiveUrl') \
           curl -X POST \
           -F "chat_id=${TELEGRAM_CHAT_ID}" \
-          -F "document=@app.apk" \
-          "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument"
+          -F "text=Descárgate la nueva versión de la app: ${android_link}" \
+          "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage"
 
       # Crear un tag basado en la versión del package.json
       - name: Create a tag for the release
