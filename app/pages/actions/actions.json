@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Mover",
+        "description": [
+            "El jugador puede mover un número de casillas igual a su movimiento (MO). "
+        ]
+    },
+    {
+        "name": "Placar",
+        "description": [
+            "El  jugador puede efectuar un placaje contra un  jugador contrario  y  de  pie  en  una  casilla  adyacente.  Un  jugador derribado no podrá llevar a cabo esta acción."
+        ]
+    },
+    {
+        "name": "Blitz (una vez por turno)",
+        "description": [
+            "El  jugador  puede  mover  un  número  de  casillas igual a su movimiento -1  (MO) y además  realizar un placaje. Tras realizar  el  placaje  el  jugador  podrá  seguir moviendo  si  aun  le queda  movimiento.  El  placaje  puede  efectuarse  en  cualquier momento durante el movimiento y cuesta un punto del mismo. "
+        ]
+    },
+    {
+        "name": "Pasar (una vez por turno)",
+        "description": [
+            "Un jugador puede intentar pasa el balón a un compañero.",
+            "Deberá declarar la casilla objetivo y medir la distancia para determinar la dificultad:",
+            "1. Pase rápido (sin modificador)",
+            "2. Pase corto (-1 a la tirada de pase)",
+            "3. Pase largo (-2 a la tirada de pase)",
+            "4. Bomba larga  (-3 a la tirada de pase)",
+            "5. Si el jugador está siendo marcado se aplica un -1 a la tirada de pase por cada jugador que lo marque.",
+            "El jugador deberá hacer un chequeo de pase (1D6).",
+            "Si uno o varios jugadores del equipo rival están en la trayectoria pueden intentar interferir el pase.",
+            "Si se supera la tirada de pase el pase sera preciso y el balón caerá en la casilla objetivo.",
+            "Si se falla el chequeo de pas el lanzamiento es impreciso y el se escora desde la casilla objetivo",
+            "Si el resultado es un 1 tras aplicar modificadores el pase es muy impreciso y el balon se desvía desde la casilla ocupada por el jugador que ha realizado el pase.",
+            "El resultado puede ser balón perdido si se saca un 1 natural o el jugador que pasa no tiene habilidad de PS. Cuando esto sucede hay un cambio de turno y el balón rebota desde la casilla del jugador que ha dado el pase."
+        ]
+    },
+    {
+        "name": "Interferir pase",
+        "description": [
+            "Para intentar interferir un pase el jugador debe estar En Pie, no haber perdido su zona de defensa, ocupar una casilla en la trayectoria del pase y que este parcialmente cubiera por la regla de pase.",
+            "Si hay más de un jugador que puede interferir el pase el entrenador debe elegir cual de ellos intentará interferir el pase.",
+            "El jugador elegido debe un Chequeo de Agilidad segun lo siguiente:",
+            "Si el pase es preciso, aplica un modificador de -3",
+            "Si el pase es impreciso, aplica un modificador de -2",
+            "Si el pase es muy impreciso, aplica un modificador de -1",
+            "Aplica un modificador de -1 si el jugador que intenta interferir el pase está siendo marcado.",
+            "Si se supera la tirada interferir ha tenido éxito y el pase ha sido \"cortado\".",
+            "Para poder atrapar el balón el jugador debe realizar una acción de Atrapar el balón."
+        ]
+    },
+    {
+        "name": "Atrapar el balon",
+        "description": [
+            "Para atrapar el balón el jugador debe pasar un chequeo de Agilidad.",
+            "Si el pase es preciso no hay modificadores",
+            "Si está intentando convertir un corte en intercepción aplica un modificador de -1",
+            "Si intenta atrapar un balón que ha rebotado aplica un modificador de -1",
+            "Si intenta atrapar un balón tras una devolución aplica un modificador de -1",
+            "Si intenta atrapar un balón que se ha escorado o desviado hasta su casilla aplica un modificador de -1",
+            "Si el jugador está siendo marcado aplica un modificador de -1 adicional por cada jugador que lo marque"
+        ]
+    },
+    {
+        "name": "Entregar el balon (una vez por turno)",
+        "description": [
+            "El jugador puede moverse antes de realizar esta acción pero una vez realizada la acción su activación termina.",
+            "El jugador puede recoger el balón durante su movimiento",
+            "El jugador que recibe el balón debe estar adyacente y En Pie",
+            "El jugador que recibe el balón debe realizar un chequeo de Agilidad como se describe en Atrapar el balón",
+            "Para entregar el balón no se necesita ningún chequeo adicional"
+        ]
+    }
+]

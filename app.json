@@ -2,7 +2,7 @@
   "expo": {
     "name": "BBL Quick Guide",
     "slug": "bbl-quick-guide",
-    "version": "1.1.0",
+    "version": "1.3.2",
     "orientation": "portrait",
     "icon": "./assets/images/logo.ico",
     "scheme": "myapp",
