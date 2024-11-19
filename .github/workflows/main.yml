@@ -1,4 +1,4 @@
-name: Publish to Expo
+name: Publish App to Expo
 
 on:
   push:
@@ -10,33 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del código del repositorio
-      - name: Checkout code
+      - name: 🏗 Setup repo
         uses: actions/checkout@v3
 
-      # Configuración de Node.js
-      - name: Set up Node.js
+      - name: 🏗 Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16" # Cambiar según la versión requerida por tu proyecto
+          node-version: 22.11.0
+          cache: npm
 
-      # Instalación de dependencias
-      - name: Install dependencies
+      - name: 🏗 Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: 📦 Install dependencies
         run: npm install
 
-      # Configuración de la variable CI para modo no interactivo
-      - name: Set CI environment variable
-        run: echo "CI=true" >> $GITHUB_ENV
-
-      # Autenticación con Expo
-      - name: Login to Expo
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }} # Asegúrate de agregar este secreto en la configuración del repositorio
-        run: echo $EXPO_TOKEN | npx expo login --username ${{ secrets.EXPO_USERNAME }} --password-stdin
-
-      # Publicar la app en Expo
-      - name: Publish to Expo
-        run: npx expo publish
+      - name: 🚀 Create update
+        run: eas build --non-interactive --platform android --profile preview
 
       # Crear un tag basado en la versión del package.json
       - name: Create a tag for the release
@@ -50,3 +43,11 @@ jobs:
           git push origin "v$VERSION"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token integrado para autenticación con GitHub
+      - name: Merge and push to develop
+        id: merge_and_push_to_develop
+        run: |
+          git checkout develop
+          git merge master
+          git push origin develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
