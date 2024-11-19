@@ -18,7 +18,7 @@ fs.writeFileSync(appJsonPath, newAppJson);
 
 // git add and commit
 try {
-  execSync(`git add .`);
+  execSync(`git add app.json`);
   execSync(`git commit -m "chore: update app.json version to ${version}"`);
 } catch (e) {
   console.error(e);
