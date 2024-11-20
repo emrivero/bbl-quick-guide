@@ -35,7 +35,7 @@ export default function Index() {
       <Text style={styles.header2}>Referencia Rápida</Text>
       <View style={styles.logoContainer}>
         <Image source={logo} style={styles.logo} />
-        <Link href={"/pages"}>
+        <Link href={"/pages/teams"}>
           <Text style={[{ fontSize: 40, color: theme.colors.textMenu }]}>
             Entrar
           </Text>

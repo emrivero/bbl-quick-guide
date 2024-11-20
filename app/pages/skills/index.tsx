@@ -1,13 +1,22 @@
 import { CustomTheme } from "@/themes/dark";
 import { useTheme } from "@react-navigation/native";
+import { Stack, useNavigation } from "expo-router";
 import React, { useEffect, useState } from "react";
-import { FlatList, StyleSheet, Text, TextInput, View } from "react-native";
-import skillsData from "./skills.json"; // Asegúrate de que la ruta sea correcta
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import skillsData from "./skills.json";
 
 const SkillsScreen: React.FC = () => {
   const [search, setSearch] = useState("");
   const [filteredSkills, setFilteredSkills] = useState(skillsData);
   const theme = useTheme() as CustomTheme;
+  const navigation = useNavigation();
 
   useEffect(() => {
     setFilteredSkills(
@@ -17,21 +26,30 @@ const SkillsScreen: React.FC = () => {
     );
   }, [search]);
 
-  const renderSkill = ({ item }) => (
+  const handlePress = (skill) => {
+    navigation.navigate("skill", {
+      name: skill.name,
+    });
+  };
+
+  const renderSkill = ({
+    item,
+  }: {
+    item: { name: string; description: string[] };
+  }) => (
     <View style={styles.skillContainer}>
-      <Text
-        style={[styles.skillName, { color: theme.colors.skillsHeaderText }]}
-      >
-        {item.name}
-      </Text>
-      {item.description.map((description, index) => (
+      <Stack.Screen
+        options={{
+          title: "Habilidades",
+        }}
+      />
+      <TouchableOpacity key={item.name} onPress={() => handlePress(item)}>
         <Text
-          key={index}
-          style={[styles.skillDescription, { color: theme.colors.text }]}
+          style={[styles.skillName, { color: theme.colors.skillsHeaderText }]}
         >
-          {description}
+          {item.name}
         </Text>
-      ))}
+      </TouchableOpacity>
     </View>
   );
 

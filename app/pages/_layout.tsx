@@ -1,4 +1,3 @@
-import { IconSymbol } from "@/components/ui/IconSymbol";
 import { FontAwesome5, FontAwesome6, Octicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { HapticTab } from "../../components/HapticTab";
@@ -16,15 +15,6 @@ export default function PagesLayout() {
         },
       }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Inicio",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="house.fill" color={color} />
-          ),
-        }}
-      />
       <Tabs.Screen
         name="teams"
         options={{
